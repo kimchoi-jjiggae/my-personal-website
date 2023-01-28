@@ -54,12 +54,14 @@ p {
 .leftIndentedH1 {
     padding-left:10px;
     margin-left:10%;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
     margin-top: 10%;
 }
 
 .rightSecondColumn {
     /* position:absolute; */
+    padding-left:10px;
+    margin-left:10%;
     margin-right:10%;
     margin-bottom: 10%;
     margin-top: 10%;
@@ -158,6 +160,8 @@ p {
     line-height: 25px;
     letter-spacing: 0em;
     text-align: left;
+    position:relative;
+    top:2vw;
 
 }
 
@@ -186,8 +190,7 @@ p {
 
 .toggle-button {
     position: absolute;
-    top: 25px;
-    right: 20px;
+    right:1vw;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -207,6 +210,9 @@ p {
 @media (max-width: 850px) {
     .toggle-button {
         display: flex;
+        z-index:99;
+        
+        
     }
 
     .navBar-links {
@@ -220,46 +226,33 @@ p {
     }
 
     .navBar-links ul {
+        position: relative;
         width: 100%;
         flex-direction: column;
+        right:1vw;
+        /* margin-top:8vw; */
+
     }
 
     .navBar-links li {
-        text-align: center;
+        text-align: right;
+
     }
 
     .navBar-links li a {
         padding: .5rem 1rem;
         color: #0E192D;
+        margin-right:12vw;
+
     }
 
     .navBar-links.active { 
         display: flex;
-    }
-
-    /* BRADS CODE */
-    .navBar {
         position: relative;
-    }
-
-    .navBar-links.active {
-        position: absolute;
-        top: 110%;
         width: 100vw;
-        margin-left: -20px;
-        background-color:green;
+        /* margin-left: -20px; */
+        /* background-color:green; */
     }
 
-    /* .navBar-links li {
-        border-bottom: 1px solid #F4F6F9;
-    }
-    .navBar-links li:first-child {
-        border-top: 1px solid #F4F6F9;
-    } */
-
-    .profilePicture img {
-        width: 401px;
-        height: 435px;
-    }
 
 }
